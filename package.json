@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node ./src"
@@ -16,5 +15,15 @@
     "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijendrasaini/Petboarding---Server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vijendrasaini/Petboarding---Server/issues"
+  },
+  "homepage": "https://github.com/vijendrasaini/Petboarding---Server#readme",
+  "description": ""
 }

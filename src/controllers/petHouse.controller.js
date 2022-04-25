@@ -17,6 +17,20 @@ router.post('/add', async (req, res)=>{
         })
     }
 })
+router.get('/get/:id', async (req, res)=>{
+    try {
+        const petHouse = await PetHouse.findOne(req.params.id)
+        return res
+        .status(201)
+        .send(petHouse)
+    } catch (error) {
+        return res
+        .status(500)
+        .send({
+            message : error.message
+        })
+    }
+})
 router.get('/pethouses', async (req, res)=>{
     try {
         const query = []
