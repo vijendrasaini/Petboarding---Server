@@ -19,7 +19,7 @@ router.post('/add', async (req, res)=>{
 })
 router.get('/get/:id', async (req, res)=>{
     try {
-        const petHouse = await PetHouse.findOne(req.params.id)
+        const petHouse = await PetHouse.findById(req.params.id).lean().exec()
         return res
         .status(201)
         .send(petHouse)
